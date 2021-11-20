@@ -1,0 +1,120 @@
+{% include 'header.html' %}
+ <!-- Content Wrapper. Contains page content -->
+ <div class="content-wrapper" style="padding-right: 10%; padding-left:10%">
+  <!-- Content Header (Page header) -->
+  <div class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1 class="m-0">Informasi</h1>
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </div>
+  <!-- /.content-header -->
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="col-md-12">
+            <div class="card card-default">
+                <div class="card-header">
+                    <h3 class="card-title">
+                    Informasi Atribut Dataset
+                    </h3>
+                </div>
+                <!-- /.card-header -->
+                <div style="padding: 10px;">
+                    <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th>Atribut</th>
+                            <th class="text-center">Deskripsi</th>
+                            <th class="text-center">Keterangan</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="text-center">Age</td>
+                            <td class="text-center">Usia dalam tahun</td>
+                            <td class="text-center">Numerik</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Sex</td>
+                            <td class="text-center">Jenis kelamin pasien</td>
+                            <td class="text-center">1=Laki-laki, 0=perempuan</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Cp</td>
+                            <td class="text-center">Jenis sakit di dada/jenis nyeri dada</td>
+                            <td class="text-center">1=Angina khas, 2=Angina tipikal, 3=nyeri non-angina, 4=asimtomatik</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Trestbps</td>
+                            <td class="text-center">Tekanan darah saat beristirahat</td>
+                            <td class="text-center">Mm Hg pada masuk ke rumah sakit</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Chol</td>
+                            <td class="text-center">Cholestrol serum </td>
+                            <td class="text-center">Dalam mg/dl</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Fbs</td>
+                            <td class="text-center">Gula darah saat istirahat > 120 mg/dl</td>
+                            <td class="text-center">1=true, 0=false</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Restecg</td>
+                            <td class="text-center">Elektrokardiografi saat istirahat</td>
+                            <td class="text-center">0=normal, 1=kelainan, 2=kemungkinan atau pasti hipertrofi ventrikel kiri</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Thalach</td>
+                            <td class="text-center">Detak jantung maksimum dicapai</td>
+                            <td class="text-center">Numerik</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Exang</td>
+                            <td class="text-center">Ukuran boolean yang menunjukkan nyeri dada apabila berolah raga</td>
+                            <td class="text-center">1=ya, 0=tidak</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Oldpeak</td>
+                            <td class="text-center">Depresi ST yang diakibatkan oleh latihan relative terhadap saat istirahat</td>
+                            <td class="text-center">Numerik</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Slope</td>
+                            <td class="text-center">Slope dari puncak ST setelah berolah raga</td>
+                            <td class="text-center">1=condong keatas, 2= datar, 3=sedikit landai</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Ca</td>
+                            <td class="text-center">Banyaknya nadi utama</td>
+                            <td class="text-center">0-3 berdasarkan warna oleh fluorosopy</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Thal</td>
+                            <td class="text-center">Kondisi jantung pasien</td>
+                            <td class="text-center">0=normal, 1=cacat tetap, 2=cacat sementara </td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">Condition</td>
+                            <td class="text-center">Hasil Pemeriksaan</td>
+                            <td class="text-center">0=Tidak menderita penyakit jantung, 1=Menderita penyakit jantung</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+                <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+            </div>
+        </div>
+        <!-- /.row (main row) -->
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  {% include 'footer.html' %}

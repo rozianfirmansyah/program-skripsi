@@ -1,0 +1,39 @@
+.navbar {
+    background-color: #397624;
+}
+
+.jumbotron {
+    padding-top: 3rem;
+    background-color: #9fc55a;
+}
+
+#form_input_data {
+    margin-top: -4rem;
+}
+
+#hasil_prediksi {
+    margin-top: 3rem;
+    margin-bottom: -1rem;
+}
+
+#contoh_data_train {
+    margin-top: -6rem;
+}
+
+footer {
+    margin-top: -2rem;
+    background-color: #9fc55a;
+    padding-bottom: 1rem;
+}
+
+.btn {
+    background-color: #397624;
+}
+
+#isi_informasi {
+    margin-top: -5rem;
+}
+
+.tabel_informasi {
+    margin-top: 1rem;
+}

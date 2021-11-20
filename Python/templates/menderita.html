@@ -1,0 +1,103 @@
+{% include 'header.html' %}
+ <!-- Content Wrapper. Contains page content -->
+ <div class="content-wrapper" style="padding-right: 10%; padding-left:10%">
+  <!-- Content Header (Page header) -->
+  <div class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1 class="m-0">Hasil Klasifikasi Penyakit Jantung</h1>
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </div>
+  <!-- /.content-header -->
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <!-- START ALERTS AND CALLOUTS -->
+        <div class="row">
+        <div class="col-md-6">
+            <div class="card card-default">
+            <div class="card-header">
+                <h3 class="card-title">
+                <i class="icon fas fa-info"></i>
+                Info Data Diri 
+                </h3>
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body">
+                <!-- ISI KONTEN DATA DIRI DISINI BRO -->
+                <strong> Nama</strong>
+                <p class="text-muted">
+                    {{ nama }}
+                </p>
+                <strong> Usia</strong>
+                <p class="text-muted">
+                    {{ umur }}
+                </p>
+                <strong> Jenis Kelamin</strong>
+                <p class="text-muted">
+                    {{ jk }}
+                </p>
+                <strong> Alamat</strong>
+                <p class="text-muted">
+                    {{ alamat }}
+                </p>
+                <strong> Tanggal </strong>
+                <p id="date" class="text-muted">
+                    
+                </p>
+                <script>
+                    var d = new Date();
+                    var date = d.getDate();
+                    var year = d.getFullYear();
+                    var month = d.getMonth();
+                    var monthArr = ["January", "February","March", "April", "May", "June", "July", "August", "September", "October", "November","December"];
+                    month = monthArr[month];
+                    document.getElementById("date").innerHTML=date+" "+month+" "+year;
+                </script>
+            </div>
+            <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+        </div>
+        <!-- /.col -->
+
+        <div class="col-md-6">
+            <div class="card card-default">
+            <div class="card-header">
+                <h3 class="card-title">
+                <i class="fas fa-bullhorn"></i>
+                Hasil Klasifikasi
+                </h3>
+            </div>
+            <!-- /.card-header -->
+            <!-- Automatic element centering -->
+            <div class="lockscreen-wrapper text-center">
+                <img class="img-fluid pad" src="{{url_for('static', filename = 'dist/img/heart1.png')}}" alt="Photo"  width="150">
+                <!-- /.lockscreen-item -->
+                <div class="help-block text-center text-black card-body">
+                    <div class="card-body">
+                        <h2><p class="text-danger"><b>Menderita</b> Penyakit Jantung</p></h2>
+                    </div>
+                </div>
+            </div>
+            <!-- /.center -->
+            <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+        </div>
+        <!-- /.col -->
+        </div>
+        <!-- /.row -->
+        <!-- END ALERTS AND CALLOUTS -->
+
+        </div>
+        <!-- /.row (main row) -->
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  {% include 'footer.html' %}

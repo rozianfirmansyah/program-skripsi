@@ -1,0 +1,39 @@
+{% include 'header.html' %}
+ <!-- Content Wrapper. Contains page content -->
+ <div class="content-wrapper" style="padding-right: 10%; padding-left:10%">
+  <!-- Content Header (Page header) -->
+  <div class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          
+        </div><!-- /.col -->
+        <div class="col-sm-6">
+          
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </div>
+  <!-- /.content-header -->
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 timeline-body" style="padding-left: 60px; margin-top:5%;">
+            <img class="img-fluid pad text-center" src="{{url_for('static', filename = 'dist/img/caption.png')}}"  alt="Landing Page" width="80%">
+            <div class="timeline-footer" style="margin-top: 50px; margin-bottom: 50px;">
+              <a href="/form" class="btn btn-info btn-sm">Cek Jantungmu</a>
+            </div>
+          </div>
+          <div class="col-md-6" style="padding-right: 40px; margin-top: 5%;">
+            <img class="img-fluid pad" src="{{url_for('static', filename = 'dist/img/jantung.png')}}"  alt="Landing Page" width="100%">
+          </div>
+        </div>
+        </div>
+        <!-- /.row (main row) -->
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  {% include 'footer.html' %}

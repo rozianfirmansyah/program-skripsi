@@ -28,15 +28,15 @@
                 <div class="col-md-6">
                   <div class="form-group">
                     <label for="exampleInputEmail1">Nama</label>
-                    <input type="text" class="form-control" name="nama" placeholder="Masukkan nama anda">
+                    <input type="text" class="form-control" name="nama" placeholder="Masukkan nama anda" required>
                   </div>
                   <div class="form-group">
                     <label for="exampleInputEmail1">Berapa umur anda?</label>
-                    <input type="text" class="form-control" name="umur" placeholder="Masukkan umur anda">
+                    <input type="text" class="form-control" name="umur" placeholder="Masukkan umur anda" required>
                   </div>
                   <div class="form-group">
                     <label for="exampleInputEmail1">Jenis Kelamin</label>
-                    <select class="custom-select" aria-label="Default select example" name="kelamin">
+                    <select class="custom-select" aria-label="Default select example" name="kelamin" required>
                       <option selected disabled selected hidden>Pilih (Laki-Laki/Perempuan)</option>
                       <option value="0">Perempuan</option>
                       <option value="1">Laki-Laki</option>
@@ -44,13 +44,13 @@
                   </div>
                   <div class="form-group">
                     <label for="exampleInputEmail1">Alamat Tempat Tinggal</label>
-                    <input type="text" class="form-control" name="alamat" placeholder="Masukkan alamat anda">
+                    <input type="text" class="form-control" name="alamat" placeholder="Masukkan alamat anda" required>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
                     <label for="exampleInputEmail1">Jenis nyeri di dada (cp)</label>
-                    <select class="custom-select" aria-label="Default select example" name="cp">
+                    <select class="custom-select" aria-label="Default select example" name="cp" required>
                       <option selected disabled selected hidden>Pilih jenis nyeri di dada</option>
                       <option value="0">Angina khas</option>
                       <option value="1">Angina tipikal</option>
@@ -60,11 +60,11 @@
                   </div>
                   <div class="form-group">
                     <label for="exampleInputEmail1">Berapa tekanan darah saat istirahat? (trestbps)</label>
-                    <input type="text" class="form-control" name="trestbps" placeholder="Masukkan tekanan darah saat beristirahat">
+                    <input type="text" class="form-control" name="trestbps" placeholder="Masukkan tekanan darah saat beristirahat" required>
                   </div>
                   <div class="form-group">
                     <label for="exampleInputEmail1">Kondisi elektrodiografi jantung (restecg)</label>
-                    <select class="custom-select" aria-label="Default select example" name="restecg">
+                    <select class="custom-select" aria-label="Default select example" name="restecg" required>
                       <option selected disabled selected hidden>Pilih kondisi elektrodiografi jantung</option>
                       <option value="0">Normal</option>
                       <option value="1">Kelainan</option>
@@ -73,7 +73,7 @@
                   </div>
                   <div class="form-group">
                     <label for="exampleInputEmail1">Jantung nyeri saat berolahraga (exang)</label>
-                    <select class="custom-select" aria-label="Default select example" name="exang">
+                    <select class="custom-select" aria-label="Default select example" name="exang" required>
                       <option selected disabled selected hidden>Pilih (Ya/Tidak)</option>
                       <option value="0">YA</option>
                       <option value="1">TIDAK</option>
@@ -81,15 +81,15 @@
                   </div>
                   <div class="form-group">
                     <label for="exampleInputEmail1">Berapa penurunan STEMI akibat olah raga? (oldpeak)</label>
-                    <input type="text" class="form-control" name="oldpeak" placeholder="Masukkan penuruan STEMI saat berolahraga">
+                    <input type="text" class="form-control" name="oldpeak" placeholder="Masukkan penuruan STEMI saat berolahraga" required>
                   </div>
                   <div class="form-group">
                     <label for="exampleInputEmail1">Banyaknya nadi utama yang terdeteksi (ca)</label>
-                    <input type="text" class="form-control" name="ca" placeholder="Masukkan angka 0-3">
+                    <input type="text" class="form-control" name="ca" placeholder="Masukkan angka 0-3" required>
                   </div>
                   <div class="form-group">
                     <label for="exampleInputEmail1">Kondisi detak jantung pasien (thal)</label>
-                    <select class="custom-select" aria-label="Default select example" name="thal">
+                    <select class="custom-select" aria-label="Default select example" name="thal" required>
                       <option selected disabled selected hidden>Pilih kondisi detak jantung pasien</option>
                       <option value="0">Normal</option>
                       <option value="1">Cacat tetap</option>

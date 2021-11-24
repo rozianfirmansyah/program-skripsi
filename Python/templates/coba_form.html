@@ -1,0 +1,210 @@
+{% include 'header.html' %}
+{% block content %}
+ <!-- Content Wrapper. Contains page content -->
+ <div class="content-wrapper" style="padding-right: 10%; padding-left:10%">
+  <!-- Content Header (Page header) -->
+  <div class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1 class="m-0">Klasifikasi Penyakit Jantung</h1>
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </div>
+  <!-- /.content-header -->
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <!-- general form elements -->
+        <div class="card card-primary">
+          <div class="card-header">
+            <h3 class="card-title">Form Klasifikasi Penyakit Jantung</h3>
+          </div>
+          <!-- /.card-header -->
+          <!-- form start -->
+          <form action = "" method = "POST">
+            {{ form.hidden_tag() }}
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-6">
+                    <fieldset class="form-group">
+                        <div class="form-group">
+                            {{ form.nama.label(class="form-control-label") }}
+        
+                            {% if form.nama.errors %}
+                                {{ form.nama(class="form-control form-control-lg is-invalid") }}
+                                <div class="invalid-feedback">
+                                    {% for error in form.nama.errors %}
+                                        <span>{{ error }}</span>
+                                    {% endfor %}
+                                </div>
+                            {% else %}
+                                {{ form.nama(class="form-control") }}
+                            {% endif %}
+                        </div>
+                        <div class="form-group">
+                            {{ form.umur.label(class="form-control-label") }}
+        
+                            {% if form.umur.errors %}
+                                {{ form.umur(class="form-control form-control-lg is-invalid") }}
+                                <div class="invalid-feedback">
+                                    {% for error in form.umur.errors %}
+                                        <span>{{ error }}</span>
+                                    {% endfor %}
+                                </div>
+                            {% else %}
+                                {{ form.umur(class="form-control") }}
+                            {% endif %}
+                        </div>
+                        <div class="form-group">
+                            {{ form.kelamin.label(class="form-control-label") }}
+        
+                            {% if form.kelamin.errors %}
+                                {{ form.kelamin(class="form-control form-control-lg is-invalid") }}
+                                <div class="invalid-feedback">
+                                    {% for error in form.kelamin.errors %}
+                                        <span>{{ error }}</span>
+                                    {% endfor %}
+                                </div>
+                            {% else %}
+                                {{ form.kelamin(class="form-control") }}
+                            {% endif %}
+                        </div>
+                        <div class="form-group">
+                            {{ form.alamat.label(class="form-control-label") }}
+        
+                            {% if form.alamat.errors %}
+                                {{ form.alamat(class="form-control form-control-lg is-invalid") }}
+                                <div class="invalid-feedback">
+                                    {% for error in form.alamat.errors %}
+                                        <span>{{ error }}</span>
+                                    {% endfor %}
+                                </div>
+                            {% else %}
+                                {{ form.alamat(class="form-control") }}
+                            {% endif %}
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="col-md-6">
+                  <fieldset class="form-group">
+                    <div class="form-group">
+                        {{ form.cp.label(class="form-control-label") }}
+    
+                        {% if form.cp.errors %}
+                            {{ form.cp(class="form-control form-control-lg is-invalid") }}
+                            <div class="invalid-feedback">
+                                {% for error in form.cp.errors %}
+                                    <span>{{ error }}</span>
+                                {% endfor %}
+                            </div>
+                        {% else %}
+                            {{ form.cp(class="form-control") }}
+                        {% endif %}
+                    </div>
+                    <div class="form-group">
+                        {{ form.trestbps.label(class="form-control-label") }}
+    
+                        {% if form.trestbps.errors %}
+                            {{ form.trestbps(class="form-control form-control-lg is-invalid") }}
+                            <div class="invalid-feedback">
+                                {% for error in form.trestbps.errors %}
+                                    <span>{{ error }}</span>
+                                {% endfor %}
+                            </div>
+                        {% else %}
+                            {{ form.trestbps(class="form-control") }}
+                        {% endif %}
+                    </div>
+                    <div class="form-group">
+                        {{ form.restecg.label(class="form-control-label") }}
+    
+                        {% if form.restecg.errors %}
+                            {{ form.restecg(class="form-control form-control-lg is-invalid") }}
+                            <div class="invalid-feedback">
+                                {% for error in form.restecg.errors %}
+                                    <span>{{ error }}</span>
+                                {% endfor %}
+                            </div>
+                        {% else %}
+                            {{ form.restecg(class="form-control") }}
+                        {% endif %}
+                    </div>
+                    <div class="form-group">
+                        {{ form.exang.label(class="form-control-label") }}
+    
+                        {% if form.exang.errors %}
+                            {{ form.exang(class="form-control form-control-lg is-invalid") }}
+                            <div class="invalid-feedback">
+                                {% for error in form.exang.errors %}
+                                    <span>{{ error }}</span>
+                                {% endfor %}
+                            </div>
+                        {% else %}
+                            {{ form.exang(class="form-control") }}
+                        {% endif %}
+                    </div>
+                    <div class="form-group">
+                      {{ form.oldpeak.label(class="form-control-label") }}
+  
+                      {% if form.oldpeak.errors %}
+                          {{ form.oldpeak(class="form-control form-control-lg is-invalid") }}
+                          <div class="invalid-feedback">
+                              {% for error in form.oldpeak.errors %}
+                                  <span>{{ error }}</span>
+                              {% endfor %}
+                          </div>
+                      {% else %}
+                          {{ form.oldpeak(class="form-control") }}
+                      {% endif %}
+                    </div>
+                    <div class="form-group">
+                      {{ form.ca.label(class="form-control-label") }}
+
+                      {% if form.ca.errors %}
+                          {{ form.ca(class="form-control form-control-lg is-invalid") }}
+                          <div class="invalid-feedback">
+                              {% for error in form.ca.errors %}
+                                  <span>{{ error }}</span>
+                              {% endfor %}
+                          </div>
+                      {% else %}
+                          {{ form.ca(class="form-control") }}
+                      {% endif %}
+                    </div>
+                    <div class="form-group">
+                      {{ form.thal.label(class="form-control-label") }}
+
+                      {% if form.thal.errors %}
+                          {{ form.thal(class="form-control form-control-lg is-invalid") }}
+                          <div class="invalid-feedback">
+                              {% for error in form.thal.errors %}
+                                  <span>{{ error }}</span>
+                              {% endfor %}
+                          </div>
+                      {% else %}
+                          {{ form.thal(class="form-control") }}
+                      {% endif %}
+                    </div>
+                  </fieldset>
+                </div>
+              </div>
+            </div>
+            <!-- /.card-body -->
+            <div class="card-footer text-right">
+                {{ form.submit(class="btn btn-primary") }}
+            </div>
+          </form>
+        </div>
+        <!-- /.card -->
+
+        </div>
+        <!-- /.row (main row) -->
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  {% endblock content %}
+  {% include 'footer.html' %}
